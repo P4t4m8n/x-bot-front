@@ -1,0 +1,13 @@
+<div>*******************</div>
+
+<form [formGroup]="signupForm" (onSubmit)="onSubmitSignup()">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" formControlName="firstName" required>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" formControlName="lastName" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email" required>
+    <label for="password">Password</label>
+    <input type="password" id="password" formControlName="password" required>
+    <button type="submit" [disabled]="!signupForm.valid">Sign Up</button>
+</form>
