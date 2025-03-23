@@ -1,0 +1,12 @@
+@use "base/reset";
+@use "base/darkmode";
+
+// Base
+@include reset.reset;
+
+.dark {
+  @include darkmode.darken;
+}
+html {
+  @include darkmode.lighten;
+}

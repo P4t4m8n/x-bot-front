@@ -1,0 +1,4 @@
+<button class="" (click)="themeService.toggleDarkMode()">
+    <span *ngIf="!themeService.darkMode()" class="">dark_mode</span>
+    <span *ngIf="themeService.darkMode()" class="">light_mode</span>
+</button>
